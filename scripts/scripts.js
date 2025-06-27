@@ -139,6 +139,10 @@ function loadDelayed() {
 }
 
 async function loadPage() {
+  window.targetGlobalSettings = {
+    clientCode: "axamitemeaptrsd",
+    imsOrgId: "DBC3FDAE59DB382F0A495C46@AdobeOrg",
+  };
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
